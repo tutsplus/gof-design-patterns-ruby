@@ -1,6 +1,9 @@
 require 'test_helper'
 require 'newsletter/content'
 
+module NewsletterTests
+end
+
 module Newsletter
   describe Content do
     describe "parsing content from JSON" do
@@ -22,8 +25,24 @@ module Newsletter
       end
     end
 
-    it "parses the content from an XML file" do
-      skip "Will resort to an adapter"
+    describe "parsing content from an XML file" do
+      before do
+        @xml = File.read File.expand_path(
+          "fixtures/newsletter.xml",
+          File.dirname(__FILE__)
+        )
+
+        @content = Content.parse(@xml)
+      end
+
+      it "parses the title" do
+        @content.title.must_equal "Hello World!"
+      end
+
+      it "parses the body" do
+        @content.body.must_equal "lorem ipsum"
+      end
+
     end
   end
 end
