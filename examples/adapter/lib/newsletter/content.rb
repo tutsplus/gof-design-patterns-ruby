@@ -1,7 +1,3 @@
-require 'json'
-require 'nokogiri'
-require 'pry'
-
 module Newsletter
   class Content
     attr_reader :title, :body

@@ -1,3 +1,6 @@
+require 'json'
+require 'nokogiri'
+require 'pry'
 require 'test_helper'
 require 'newsletter/content'
 
