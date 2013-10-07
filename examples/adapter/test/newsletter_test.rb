@@ -3,9 +3,8 @@ require 'nokogiri'
 require 'pry'
 require 'test_helper'
 require 'newsletter/content'
-
-module NewsletterTests
-end
+require 'newsletter/adapters/xml'
+require 'newsletter/adapters/json'
 
 module Newsletter
   describe Content do
@@ -16,7 +15,7 @@ module Newsletter
           "fixtures/newsletter.json",
           File.dirname(__FILE__)
         )
-        @content = Content.parse(@json)
+        @content = Content.parse(@json, :json)
       end
 
       it "parses the title" do
@@ -35,7 +34,7 @@ module Newsletter
           File.dirname(__FILE__)
         )
 
-        @content = Content.parse(@xml)
+        @content = Content.parse(@xml, :xml)
       end
 
       it "parses the title" do
