@@ -15,10 +15,10 @@
 
 ## Structural patterns
 
-* Adapter
+* = Adapter
 * Bridge
 * Composite
-* Decorator
+* = Decorator
 * Facade
 * Flyweight
 * Proxy
@@ -26,13 +26,13 @@
 ## Behavioral patterns
 
 * Chain of responsibility
-* Command
+* = Command
 * Interpreter
-* Iterator
+* = Iterator
 * Mediator
 * Memento 
-* Observer 
+* = Observer 
 * State
-* Strategy
-* Template method
+* = Strategy
+* = Template method
 * Visitor
