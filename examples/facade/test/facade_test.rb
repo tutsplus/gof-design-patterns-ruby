@@ -1,5 +1,6 @@
 require 'test_helper'
 require 'product_controller'
+require 'product_finder'
 require 'product'
 
 describe ProductController do

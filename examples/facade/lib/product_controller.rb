@@ -2,6 +2,6 @@ class ProductController
   attr_reader :product
 
   def show id
-    Product.find id
+    ProductFinder.find id
   end
 end
