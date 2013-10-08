@@ -11,7 +11,7 @@
 * Factory Method
 * Builder
 * Prototype
-* Singleton
+* = Singleton
 
 ## Structural patterns
 
@@ -19,7 +19,7 @@
 * Bridge
 * Composite
 * = Decorator
-* Facade
+* = Facade
 * Flyweight
 * Proxy
 
@@ -30,8 +30,8 @@
 * Interpreter
 * = Iterator
 * Mediator
-* Memento 
-* = Observer 
+* Memento
+* = Observer
 * State
 * = Strategy
 * = Template method
