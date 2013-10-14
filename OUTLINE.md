@@ -7,9 +7,9 @@
 
 ## Creational patterns
 
-* Abstract Factory
-* Factory Method
-* Builder
+* = Abstract Factory
+* = Factory Method
+* = Builder
 * Prototype
 * = Singleton
 
@@ -21,7 +21,7 @@
 * = Decorator
 * = Facade
 * Flyweight
-* Proxy
+* = Proxy
 
 ## Behavioral patterns
 
