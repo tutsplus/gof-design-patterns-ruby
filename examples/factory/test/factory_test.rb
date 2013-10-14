@@ -1,12 +1,22 @@
 require 'test_helper'
-require 'rental_plan'
+require 'payment_service'
+require 'manager'
+require 'user'
+require 'exceptions/forbidden_access'
 
-describe RentalPlan do
-  before do
-    @plan = RentalPlan::Base.create("My First Plan")
+describe PaymentServiceFactory do
+  let(:user) { User.new "John Doe" }
+  let(:manager) { Manager.new "The Boss" }
+
+  it "allows a manager to perform payments" do
+    service = PaymentServiceFactory.for manager
+    service.pay user, 500
+
+    # no assertion, just test it doesn't throw an error
   end
 
-  it "has a plan description of things" do
-    @plan.details.name.must_equal "My First Plan"
+  it "forbids a regular user to perform payments" do
+    service = PaymentServiceFactory.for user
+    -> { service.pay manager, 500 }.must_raise ForbiddenAccessError
   end
 end
