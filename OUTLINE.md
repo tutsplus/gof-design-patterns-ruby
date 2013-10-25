@@ -1,38 +1,34 @@
 # Design Patterns in Ruby
 
-## Introduction
+# Introduction
 
-* Introduction
-* What are Design Patterns?
+## 1. Introduction
 
-## Creational patterns
+### Show notes
 
-* = Abstract Factory
-* = Factory Method
-* = Builder
-* Prototype
-* = Singleton
+* [Source code on GitHub](https://github.com/tuts-premium/gof-patterns-ruby)
 
-## Structural patterns
+## 2. What are Design Patterns?
 
-* = Adapter
-* Bridge
-* Composite
-* = Decorator
-* = Facade
-* Flyweight
-* = Proxy
-
-## Behavioral patterns
-
-* Chain of responsibility
-* = Command
-* Interpreter
-* = Iterator
 * Mediator
-* Memento
-* = Observer
-* State
-* = Strategy
-* = Template method
-* Visitor
+
+## Template Method
+
+## Strategy
+
+### Show notes
+
+* [OmniAuth](https://github.com/intridea/omniauth)
+
+## Adapter
+
+### Show notes
+
+* [Nokogiri documentation](http://nokogiri.org/tutorials)
+
+## Final tips
+
+### Show notes
+
+* [SOLID
+  Principles](blog.rubybestpractices.com/posts/gregory/055-issue-23-solid-design.html)
